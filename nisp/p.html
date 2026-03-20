@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="p.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-symbol">&lt;</span>Portfolio<span class="logo-symbol">/&gt;</span>
+      <div style="font-size: 0.8rem; margin-top: 4px;">Hello, I'm Nisarga</div>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#events" class="nav-link">Events</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ======= HERO / HOME ======= -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting reveal-up">Hello, I'm Nisarga</p>
+      <h1 class="hero-name reveal-up delay-1">
+        Creative<br><span class="highlight-text">Developer</span> &amp;<br>Designer
+      </h1>
+      <p class="hero-sub reveal-up delay-2">
+        Passionate student · Web Developer · UI/UX Designer<br>
+        B.Tech CSE — 2nd Year
+      </p>
+      <div class="hero-cta reveal-up delay-3">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal-right delay-2">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <i class="fa-solid fa-code"></i>
+        </div>
+      </div>
+      <div class="floating-badge badge-1"><i class="fa-brands fa-figma"></i> Figma</div>
+      <div class="floating-badge badge-2"><i class="fa-brands fa-python"></i> Python</div>
+      <div class="floating-badge badge-3"><i class="fa-solid fa-paintbrush"></i> UI/UX</div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ======= ABOUT ======= -->
+  <section class="section about" id="about">
+    <div class="section-label">01 — About Me</div>
+    <div class="about-grid">
+      <div class="about-image-wrap reveal-left">
+        <div class="about-photo-frame">
+          <div class="photo-placeholder">
+            <i class="fa-solid fa-user-astronaut"></i>
+          </div>
+          <div class="frame-deco"></div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card"><span class="stat-num">2<sup>nd</sup></span><span>Year B.Tech</span></div>
+          <div class="stat-card"><span class="stat-num">3+</span><span>Projects</span></div>
+          <div class="stat-card"><span class="stat-num">5+</span><span>Events</span></div>
+        </div>
+      </div>
+      <div class="about-text reveal-right">
+        <h2 class="section-title">Who Am I?</h2>
+        <p>I'm a <strong>passionate student, web developer, and UI/UX designer</strong> currently in my second year of a Bachelor of Technology in Computer Science.</p>
+        <p>I enjoy building <strong>user-friendly digital experiences</strong> and continuously improving my skills in both development and design. I love exploring new technologies, having fun while learning, and creating meaningful work that makes an impact.</p>
+        <p>When I'm not coding, you'll find me sketching interfaces on Figma, attending tech events, or deep-diving into the latest design trends.</p>
+        <div class="about-tags">
+          <span class="tag">🎓 B.Tech CSE</span>
+          <span class="tag">💻 Web Dev</span>
+          <span class="tag">🎨 UI/UX</span>
+          <span class="tag">🐍 Python</span>
+          <span class="tag">🚀 Tech Enthusiast</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= SKILLS ======= -->
+  <section class="section skills" id="skills">
+    <div class="section-label">02 — Skills</div>
+    <h2 class="section-title centered reveal-up">What I Do</h2>
+    <p class="section-sub centered reveal-up delay-1">A blend of technical prowess and creative finesse</p>
+    <div class="skills-grid">
+
+      <div class="skill-card reveal-up delay-1">
+        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+        <h3>Frontend Development</h3>
+        <p>Crafting responsive, pixel-perfect interfaces with HTML, CSS & JavaScript that delight users.</p>
+        <div class="skill-stack">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div>
+      </div>
+
+      <div class="skill-card reveal-up delay-2">
+        <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+        <h3>Python</h3>
+        <p>Building scripts, automation tools, and backend logic with clean, readable Python code.</p>
+        <div class="skill-stack">
+          <span>Python</span><span>Flask</span><span>NumPy</span><span>Pandas</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="78%"></div></div>
+      </div>
+
+      <div class="skill-card reveal-up delay-3">
+        <div class="skill-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+        <h3>UI/UX Design</h3>
+        <p>Designing intuitive, aesthetic experiences through research, wireframing, and prototyping.</p>
+        <div class="skill-stack">
+          <span>Research</span><span>Wireframes</span><span>Prototypes</span><span>Usability</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+      </div>
+
+      <div class="skill-card reveal-up delay-1">
+        <div class="skill-icon"><i class="fa-brands fa-figma"></i></div>
+        <h3>Figma</h3>
+        <p>Creating stunning designs, component libraries, and interactive prototypes in Figma.</p>
+        <div class="skill-stack">
+          <span>Auto Layout</span><span>Components</span><span>Variants</span><span>Plugins</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======= PROJECTS ======= -->
+  <section class="section projects" id="projects">
+    <div class="section-label">03 — Projects</div>
+    <h2 class="section-title centered reveal-up">My Work</h2>
+    <p class="section-sub centered reveal-up delay-1">Things I've built with love and late nights</p>
+    <div class="projects-grid">
+
+      <div class="project-card reveal-up delay-1" data-category="web">
+        <div class="project-img">
+          <div class="project-mock mock-1"><i class="fa-solid fa-globe"></i></div>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">Web Development</span>
+          <h3>Personal Portfolio</h3>
+          <p>A responsive, animated portfolio website showcasing my work with a bold pink-black theme.</p>
+          <div class="project-links">
+            <a href="#" class="proj-link"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" class="proj-link primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up delay-2" data-category="design">
+        <div class="project-img">
+          <div class="project-mock mock-2"><i class="fa-solid fa-mobile-screen"></i></div>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">UI/UX Design</span>
+          <h3>E-Commerce App Design</h3>
+          <p>Full UX flow for a shopping app — from user research to high-fidelity Figma prototype.</p>
+          <div class="project-links">
+            <a href="#" class="proj-link"><i class="fa-brands fa-figma"></i> Figma</a>
+            <a href="#" class="proj-link primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Case Study</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up delay-3" data-category="python">
+        <div class="project-img">
+          <div class="project-mock mock-3"><i class="fa-solid fa-robot"></i></div>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">Python</span>
+          <h3>Automation Dashboard</h3>
+          <p>Python-powered data dashboard that visualizes CSV reports with interactive charts.</p>
+          <div class="project-links">
+            <a href="#" class="proj-link"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" class="proj-link primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up delay-1" data-category="web">
+        <div class="project-img">
+          <div class="project-mock mock-4"><i class="fa-solid fa-palette"></i></div>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">Frontend</span>
+          <h3>Design System Library</h3>
+          <p>A reusable component library built with vanilla CSS and JavaScript for rapid prototyping.</p>
+          <div class="project-links">
+            <a href="#" class="proj-link"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" class="proj-link primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Docs</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up delay-2" data-category="web">
+        <div class="project-img">
+          <div class="project-mock mock-5"><i class="fa-solid fa-money-bill-split"></i></div>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">Web Development</span>
+          <h3>Split Bill Calculator</h3>
+          <p>A practical web app for splitting bills among friends with easy calculation and sharing features.</p>
+          <div class="project-links">
+            <a href="#" class="proj-link"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" class="proj-link primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======= EVENTS ======= -->
+  <section class="section events" id="events">
+    <div class="section-label">04 — Events</div>
+    <h2 class="section-title centered reveal-up">Events Attended</h2>
+    <p class="section-sub centered reveal-up delay-1">Learning, networking & growing in the tech community</p>
+    <div class="timeline">
+
+      <div class="timeline-item reveal-left">
+        <div class="tl-dot"><i class="fa-solid fa-trophy"></i></div>
+        <div class="tl-card">
+          <span class="tl-date">2024</span>
+          <h3>National Hackathon</h3>
+          <p>Participated in a 24-hour national hackathon, building a social impact web app with a team of 4.</p>
+          <span class="tl-badge">🏆 Top 10 Finalist</span>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal-right">
+        <div class="tl-dot"><i class="fa-solid fa-microphone"></i></div>
+        <div class="tl-card">
+          <span class="tl-date">2024</span>
+          <h3>Tech Summit — UI/UX Workshop</h3>
+          <p>Attended an intensive UI/UX design workshop led by industry designers, focusing on design thinking.</p>
+          <span class="tl-badge">🎨 Certificate</span>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal-left">
+        <div class="tl-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="tl-card">
+          <span class="tl-date">2023</span>
+          <h3>Python Bootcamp</h3>
+          <p>Completed a 3-day intensive Python bootcamp covering data manipulation, APIs, and automation.</p>
+          <span class="tl-badge">✅ Completed</span>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal-right">
+        <div class="tl-dot"><i class="fa-solid fa-users"></i></div>
+        <div class="tl-card">
+          <span class="tl-date">2023</span>
+          <h3>College Tech Fest — DevFest</h3>
+          <p>Presented a web project at the annual college tech fest, winning Best Frontend Design award.</p>
+          <span class="tl-badge">🥇 Best Design</span>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal-left">
+        <div class="tl-dot"><i class="fa-solid fa-star"></i></div>
+        <div class="tl-card">
+          <span class="tl-date">2023</span>
+          <h3>Figma Community Meetup</h3>
+          <p>Connected with designers from across the region, participated in live design challenges.</p>
+          <span class="tl-badge">🤝 Networked</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======= CONTACT ======= -->
+  <section class="section contact" id="contact">
+    <div class="section-label">05 — Contact</div>
+    <h2 class="section-title centered reveal-up">Let's Connect</h2>
+    <p class="section-sub centered reveal-up delay-1">Got a project idea or just want to say hi? My inbox is always open!</p>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <div class="contact-card">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <p>nisargabtw7@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <h4>Location</h4>
+            <p>India 🇮🇳</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <div>
+            <h4>Status</h4>
+            <p>Open to internships & freelance</p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-btn" aria-label="Figma"><i class="fa-brands fa-figma"></i></a>
+          <a href="#" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal-right" id="contact-form">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="your email" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Let's collab!" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">
+          <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+        </button>
+        <div class="form-success" id="form-success">
+          <i class="fa-solid fa-circle-check"></i> Message sent! I'll get back to you soon.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo"><span>&lt;</span> Nisarga's Portfolio<span>/&gt;</span></span>
+      <p>Designed & Built with 💗 by a passionate CSE student</p>
+      <p class="footer-copy">© 2026 All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="p.js"></script>
+</body>
+</html>
